@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Logo and image */
+#logo {
+    margin: 11px 45px;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: -19px -30px;
+}
+
+/* List styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Rhodium Libre', serif;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 0px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 522px;
+    align-items: center;
+}
+
+#home::before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 88%;
+    width: 100%;
+    z-index: -1;
+    background: url(../img/bg1.jpg) no-repeat center center/cover;
+    opacity: 0.9;
+}
+
+#home h1 {
+    /* font-size: 3rem; */
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    /* font-size: 1.5rem; */
+    font-family: 'Bree Serif', serif;
+}
+
+/* SERVICES SECTION */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    border-radius: 23px;
+    margin: 3px 6px;
+    padding: 34px;
+    background-color: #f2f2f2;
+}
+
+#services .box img {
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* CLIENT SECTION */
+#client-section {
+    height: 367px;
+}
+
+#client-section::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: url(../img/bg.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 55%;
+    opacity: 0.4;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 24px
+}
+
+.client-item img {
+    height: 124px;
+}
+
+/* CONTACT SECTION */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url(../img/contact1.jpg)no-repeat center center/cover;
+    opacity: 0.5;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+/* UTILITY CLASS */
+.h-primery {
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 17px;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: cornflowerblue;
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
